@@ -1,0 +1,22 @@
+body {
+    background-color: cornsilk;
+    top: 2000px;
+}
+
+h1 {
+    position: relative;
+    color: skyblue;
+    text-align: center;
+    top: 150px;
+}
+
+h2 { 
+    position: relative;
+    color: mediumpurple;
+    text-align: center;
+    top: 150px;
+
+p {
+    font-family: "Cambria";
+    font-size: 20px;
+}

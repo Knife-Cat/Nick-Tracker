@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <title>Nick Llevar and his journey from Bronze to Challenger</title>
+    </head>
+
+    <body>
+        
+        <script type="text/javascript">
+            //var myjson;
+              //  $.getJSON("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/dogsploogedrinker?api_key=2bcf9436-a1df-4e7f-b4a0-fc51830bc64f", function(json){
+                   // myjson = json;
+               // });
+            //var myArr;
+            var xmlhttp = new XMLHttpRequest();
+            var url = "https://na.api.pvp.net/api/lol/na/v1.4/summoner/23497400?api_key=2bcf9436-a1df-4e7f-b4a0-fc51830bc64f";
+
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    var myArr = JSON.parse(xmlhttp.responseText);
+                    var name1 = myArr['23497400'].name;
+                    window.alert(myArr['23497400'].name);
+                    document.getElementsByClassName("pagetitle")[0].innerHTML = "Nick&#39;s summoner name is " + name1;
+                    
+                    //setAttribute("href", name1);
+                
+                    //myFunction(myArr.name);
+                }
+            }
+
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+            
+            
+            //var name1 = myArr.name;
+            //document.getElementById("nickName").setAttribute("href", name1);
+            
+            //window.alert(5 + 6);
+            //document.write(5 + 6);
+            
+        </script>
+        
+        
+        <!--<h1>Nick has played games this week</h1> -->
+        
+        <h1 id="title">
+            <span class="pagetitle" >
+                name unavailable
+            </span>
+        </h1>
+
+        <h2>(｡◕‿‿◕｡) (ﾉ◕ヮ◕)ﾉ t(-.-t) (｀◔ ω ◔´) (ง'̀-'́)ง (ಥ﹏ಥ) ( ︶︿︶) ლ(́◉◞౪◟◉‵ლ) ☜(⌒▽⌒)☞</h2>
+
+
+    </body>
+
+
+</html>
